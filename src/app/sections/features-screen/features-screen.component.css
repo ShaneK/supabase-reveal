@@ -1,0 +1,32 @@
+h2 {
+  color: var(--highlight-color);
+}
+
+.feature-grid {
+  display:grid;
+  grid-template-columns: 45% 45%;
+  grid-row: auto;
+  grid-column-gap: 10%;
+  grid-row-gap: 28px;
+}
+
+.title {
+  position: relative;
+  font-weight: bold;
+}
+
+.title .small {
+  position: absolute;
+  top: 0;
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+.description {
+  font-size: 32px;
+}
+
+.fas {
+  font-size: 34px;
+  color: var(--highlight-color);
+}

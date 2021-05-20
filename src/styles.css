@@ -1,2 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+  --highlight-color: #65D9A5;
+}
+
+.slide-background-content {
+  background-color: #181818;
+}

@@ -24,7 +24,9 @@ export class AppComponent implements AfterViewInit {
 
   public ngAfterViewInit(): void {
     let deck = new Reveal({
-      plugins: [ Markdown, Highlight, Notes ]
+      plugins: [ Markdown, Highlight, Notes ],
+      progress: false,
+      hash: true
     })
     deck.initialize();
   }
