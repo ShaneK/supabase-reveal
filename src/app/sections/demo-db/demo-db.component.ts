@@ -16,6 +16,7 @@ export class DemoDbComponent implements OnInit, OnDestroy {
     '#18185c',
     '#044d11',
     '#890101',
+    '#58206e'
   ];
   private _demoInFocus: boolean = false;
 
