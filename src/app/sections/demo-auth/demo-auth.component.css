@@ -1,0 +1,11 @@
+button {
+  padding: 10px 50px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+button i {
+  padding-right: 5px;
+}

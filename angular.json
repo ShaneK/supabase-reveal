@@ -30,7 +30,7 @@
               "src/styles.css",
               "node_modules/reveal.js/dist/reveal.css",
               "node_modules/reveal.js/dist/theme/black.css",
-              "node_modules/reveal.js/plugin/highlight/monokai.css",
+              "node_modules/reveal.js/plugin/highlight/zenburn.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.css"
             ],
             "scripts": []

@@ -1,8 +1,64 @@
 <section data-auto-animate>
   <h2 data-id="auth-header">Authentication</h2>
-  <img src="assets/features/authentication.png" alt="Authentication screenshot" class="r-stretch" />
+  <img
+    src="assets/features/authentication.png"
+    alt="Authentication screenshot"
+    class="r-stretch"
+  />
   <aside class="notes">
-    Authentication types: Google, GitHub, GitLab, Azure, Facebook, Twitter, Bitbucket<br /><br />
-    When you toggle an auth type on, it has a link you click to make getting auth keys easy
+    Authentication types: Google, GitHub, GitLab, Azure, Facebook, Twitter,
+    Bitbucket<br /><br />
+    When you toggle an auth type on, it has a link you click to make getting
+    auth keys easy
   </aside>
+</section>
+<section data-auto-animate>
+  <h2 data-id="auth-header">Authentication</h2>
+  <div class="code-container-container">
+    <div class="server code-container">
+      <span class="description">Sign in:</span>
+      <pre data-id="code"><code data-trim class="css">{{signInCode}}</code></pre>
+    </div>
+    <div class="client code-container">
+      <span class="description">Sign out:</span>
+      <pre data-id="code"><code data-trim class="css">{{signOutCode}}</code></pre>
+    </div>
+  </div>
+  <aside class="notes">
+    There's an alternative register method and sign in with email/password that allows you to allow
+    users to use an email/password flow too, if you want.
+  </aside>
+</section>
+<section data-auto-animate>
+  <h2 data-id="auth-header">Authentication</h2>
+  <div class="code-container-container">
+    <div class="server code-container">
+      <span class="description">Get current user:</span>
+      <pre data-id="code"><code data-trim class="css">{{currentUserCode}}</code></pre>
+    </div>
+    <div class="client code-container">
+      <span class="description">Bind to auth changes:</span>
+      <pre data-id="code"><code data-trim class="css">{{authCallback}}</code></pre>
+    </div>
+  </div>
+</section>
+<section data-auto-animate>
+  <h2 data-id="auth-header">Authentication Demo</h2>
+  <div *ngIf="user$ | async as user">
+    Welcome, {{ user.email }}!
+    <div>
+      <button (click)="signOut()">Logout</button>
+    </div>
+  </div>
+  <button (click)="signIn()" *ngIf="!(user$ | async)">
+    <i class="fab fa-github"></i> Sign in with Github
+  </button>
+</section>
+<section data-auto-animate>
+  <h2 data-id="auth-header">Cons of Authentication</h2>
+  <ul>
+    <li>Currently no support for row level security for real-time data (WIP)</li>
+    <li class="fragment">SDK a little buggy for getting the current user (race condition?)</li>
+    <li class="fragment">Redirection for 3rd party OAuth is random Supabase URL (could confuse or concern non-tech users)</li>
+  </ul>
 </section>

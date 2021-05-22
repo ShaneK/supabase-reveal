@@ -16,22 +16,34 @@
   <div class="code-container-container">
     <div class="server code-container">
       <span class="description">Read row:</span>
-      <pre data-id="code"><code data-trim>{{readRow}}</code></pre>
+      <pre data-id="code"><code data-trim class="csharp">{{readRow}}</code></pre>
     </div>
     <div class="client code-container">
       <span class="description">Subscribe to updates:</span>
-      <pre data-id="code"><code data-trim>{{subscribeToChanges}}</code></pre>
+      <pre data-id="code"><code data-trim class="csharp">{{subscribeToChanges}}</code></pre>
     </div>
   </div>
+  <aside class="notes">
+    <p>
+      In this example we have a table named Sweet Test Table that stores settings.
+    </p>
+    <p>
+      We just want to select the current value for the row with the name background-color
+      and we can also subscribe to updates using this syntax
+    </p>
+  </aside>
 </section>
 <section data-auto-animate>
   <h2 data-id="database-header">Database</h2>
   <div class="code-container-container">
     <div class="server code-container">
       <span class="description">Update row:</span>
-      <pre data-id="code"><code data-trim>{{updateRow}}</code></pre>
+      <pre data-id="code"><code data-trim class="csharp">{{updateRow}}</code></pre>
     </div>
   </div>
+  <aside class="notes">
+    Then we want to be able to update that same row
+  </aside>
 </section>
 <section>
   LIVE DEMO HERE

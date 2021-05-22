@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { TitleScreenComponent } from './sections/title-screen/title-screen.component';
@@ -19,7 +20,17 @@ import { DemoAuthComponent } from './sections/demo-auth/demo-auth.component';
     DemoAuthComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {
+        path: 'login-success',
+        redirectTo: '/#/9'
+      },
+      {
+        path: '**',
+        component: AppComponent
+      }
+    ])
   ],
   providers: [
     SupaClientService
