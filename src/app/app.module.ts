@@ -10,6 +10,8 @@ import { DemoDbComponent } from './sections/demo-db/demo-db.component';
 import { SupaClientService } from './services/supa-client.service';
 import { DemoAuthComponent } from './sections/demo-auth/demo-auth.component';
 import { DemoStorageComponent } from './sections/demo-storage/demo-storage.component';
+import { DemoCompareComponent } from './sections/demo-compare/demo-compare.component';
+import { CreditsComponent } from './sections/credits/credits.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { DemoStorageComponent } from './sections/demo-storage/demo-storage.compo
     FeaturesScreenComponent,
     DemoDbComponent,
     DemoAuthComponent,
-    DemoStorageComponent
+    DemoStorageComponent,
+    DemoCompareComponent,
+    CreditsComponent
   ],
   imports: [
     BrowserModule,

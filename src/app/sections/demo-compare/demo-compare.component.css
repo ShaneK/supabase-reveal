@@ -1,0 +1,12 @@
+.comparison-container {
+  display: flex;
+}
+
+table {
+  font-size: 30px;
+}
+
+.highlight {
+  color: var(--highlight-color);
+  border-bottom-color: white;
+}
