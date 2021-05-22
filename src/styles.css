@@ -2,10 +2,11 @@
 
 :root {
   --highlight-color: #65D9A5;
+  --background-color: #181818;
 }
 
 .slide-background-content {
-  background-color: #181818;
+  background-color: var(--background-color);
 }
 
 h2 {

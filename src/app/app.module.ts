@@ -7,6 +7,7 @@ import { TitleScreenComponent } from './sections/title-screen/title-screen.compo
 import { RemoveHostDirective } from './directives/remove-host.directive';
 import { FeaturesScreenComponent } from './sections/features-screen/features-screen.component';
 import { DemoDbComponent } from './sections/demo-db/demo-db.component';
+import { RevealService } from './services/reveal.service';
 import { SupaClientService } from './services/supa-client.service';
 import { DemoAuthComponent } from './sections/demo-auth/demo-auth.component';
 import { DemoStorageComponent } from './sections/demo-storage/demo-storage.component';
@@ -39,7 +40,8 @@ import { CreditsComponent } from './sections/credits/credits.component';
     ])
   ],
   providers: [
-    SupaClientService
+    SupaClientService,
+    RevealService
   ],
   bootstrap: [AppComponent]
 })
