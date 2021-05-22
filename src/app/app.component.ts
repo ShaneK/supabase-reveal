@@ -18,7 +18,7 @@ export class AppComponent implements AfterViewInit {
   public static a: string = 'a';
 
   public run(): void {
-    console.log('Hello world!);
+    console.log('Hello world!');
   }
 }`;
 

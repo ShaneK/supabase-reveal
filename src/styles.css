@@ -7,3 +7,7 @@
 .slide-background-content {
   background-color: #181818;
 }
+
+h2 {
+  color: var(--highlight-color) !important;
+}

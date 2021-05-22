@@ -1,0 +1,10 @@
+.code-container {
+  text-align: left;
+}
+
+.code-container .description {
+  display: inline-block;
+  font-size: 30px;
+  margin-left: 48px;
+  margin-bottom: -10px;
+}
