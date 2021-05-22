@@ -36,7 +36,7 @@ export class DemoDbComponent implements OnInit, OnDestroy {
   public updateRow: string = `const { data, error } = await this._supaService
       .client
       .from('sweettesttable')
-      .update({ data: '{ "value": "#00ff00" }' })
+      .update({ data: { value: '#00ff00' }})
       .eq('name', 'background-color');`;
 
   private _subscriptions: RealtimeSubscription[] = [];
