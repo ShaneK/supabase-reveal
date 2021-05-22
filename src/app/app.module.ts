@@ -9,6 +9,7 @@ import { FeaturesScreenComponent } from './sections/features-screen/features-scr
 import { DemoDbComponent } from './sections/demo-db/demo-db.component';
 import { SupaClientService } from './services/supa-client.service';
 import { DemoAuthComponent } from './sections/demo-auth/demo-auth.component';
+import { DemoStorageComponent } from './sections/demo-storage/demo-storage.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DemoAuthComponent } from './sections/demo-auth/demo-auth.component';
     RemoveHostDirective,
     FeaturesScreenComponent,
     DemoDbComponent,
-    DemoAuthComponent
+    DemoAuthComponent,
+    DemoStorageComponent
   ],
   imports: [
     BrowserModule,

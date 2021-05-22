@@ -1,0 +1,15 @@
+<section data-auto-animate>
+  <h2 data-id="storage">Storage</h2>
+  <img src="assets/features/storage.png" alt="Storage demo" class="r-stretch" />
+</section>
+<section data-auto-animate>
+  <h2 data-id="storage">Storage</h2>
+  Code examples
+</section>
+<section data-auto-animate>
+  <h2 data-id="storage">Storage Demo</h2>
+  <input type="file" (change)="uploadFile($event)" *ngIf="!downloadLink" />
+  <a [href]="downloadLink" *ngIf="downloadLink" target="_blank">
+    <img [src]="downloadLink" height="300" alt="Downloaded image" />
+  </a>
+</section>
