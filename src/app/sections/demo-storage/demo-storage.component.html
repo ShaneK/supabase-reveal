@@ -4,12 +4,30 @@
 </section>
 <section data-auto-animate>
   <h2 data-id="storage">Storage</h2>
-  Code examples
+  <div class="code-container-container">
+    <div class="server code-container">
+      <span class="description">List bucket content:</span>
+      <pre data-id="code"><code data-trim class="css">{{listBucketContents}}</code></pre>
+    </div>
+    <div class="client code-container">
+      <span class="description">Upload to bucket:</span>
+      <pre data-id="code"><code data-trim class="css">{{uploadToBucket}}</code></pre>
+    </div>
+  </div>
+</section>
+<section data-auto-animate>
+  <h2 data-id="storage">Storage</h2>
+  <div class="code-container-container">
+    <div class="client code-container">
+      <span class="description">Create signed URL:</span>
+      <pre data-id="code"><code data-trim class="css">{{createSignedUrl}}</code></pre>
+    </div>
+  </div>
 </section>
 <section data-auto-animate>
   <h2 data-id="storage">Storage Demo</h2>
   <input type="file" (change)="uploadFile($event)" *ngIf="!downloadLink" />
   <a [href]="downloadLink" *ngIf="downloadLink" target="_blank">
-    <img [src]="downloadLink" height="300" alt="Downloaded image" />
+    <img [src]="downloadLink" height="500" alt="Downloaded image" />
   </a>
 </section>
