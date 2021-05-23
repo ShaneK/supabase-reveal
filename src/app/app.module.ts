@@ -13,6 +13,7 @@ import { DemoAuthComponent } from './sections/demo-auth/demo-auth.component';
 import { DemoStorageComponent } from './sections/demo-storage/demo-storage.component';
 import { DemoCompareComponent } from './sections/demo-compare/demo-compare.component';
 import { CreditsComponent } from './sections/credits/credits.component';
+import { DocumenationComponent } from './sections/documenation/documenation.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CreditsComponent } from './sections/credits/credits.component';
     DemoAuthComponent,
     DemoStorageComponent,
     DemoCompareComponent,
-    CreditsComponent
+    CreditsComponent,
+    DocumenationComponent
   ],
   imports: [
     BrowserModule,
