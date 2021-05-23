@@ -20,7 +20,7 @@ export class DemoStorageComponent {
   public createSignedUrl: string = `const { data, error } = await this._supaService
       .client.storage
       .from('bucket')
-      .createSignedUrl(fileName, 1500);`;
+      .createSignedUrl(fileName, expirationTime);`;
 
   constructor(private _supaService: SupaClientService) {}
 
@@ -45,7 +45,7 @@ export class DemoStorageComponent {
 
     const { data: downloadUrl } = await this._supaService.client.storage
       .from('test')
-      .createSignedUrl(fileName, 1500);
+      .createSignedUrl(fileName, 15);
 
     this.downloadLink = downloadUrl?.signedURL || '';
   }
